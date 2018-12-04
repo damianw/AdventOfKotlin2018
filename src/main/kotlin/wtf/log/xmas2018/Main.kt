@@ -6,6 +6,7 @@ import com.beust.jcommander.Parameter
 import com.beust.jcommander.ParameterException
 import io.reactivex.Flowable
 import io.reactivex.disposables.Disposable
+import wtf.log.xmas2018.days.day1.Day1
 import wtf.log.xmas2018.util.toPrettyFormat
 import java.time.Duration
 import java.util.concurrent.TimeUnit
@@ -13,6 +14,7 @@ import kotlin.system.exitProcess
 import kotlin.system.measureNanoTime
 
 private val SOLVERS = listOf<Solver<*, *>?>(
+        Day1
 )
 
 private object ProgramArguments {
