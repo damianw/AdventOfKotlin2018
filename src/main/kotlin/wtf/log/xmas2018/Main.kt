@@ -7,16 +7,20 @@ import com.beust.jcommander.ParameterException
 import io.reactivex.Flowable
 import io.reactivex.disposables.Disposable
 import wtf.log.xmas2018.days.day1.Day1
+import wtf.log.xmas2018.days.day2.Day2
 import wtf.log.xmas2018.util.toPrettyFormat
 import java.time.Duration
 import java.util.concurrent.TimeUnit
 import kotlin.system.exitProcess
 import kotlin.system.measureNanoTime
 
+@ExperimentalUnsignedTypes
 private val SOLVERS = listOf<Solver<*, *>?>(
-        Day1
+        Day1,
+        Day2
 )
 
+@ExperimentalUnsignedTypes
 private object ProgramArguments {
 
     @Parameter(
@@ -94,6 +98,7 @@ private fun printIndented(header: String, input: String) {
     lines.drop(1).map { it.indent(header.length) }.forEach(::println)
 }
 
+@ExperimentalUnsignedTypes
 fun main(args: Array<String>) {
     val commander = JCommander(ProgramArguments).apply {
         programName = "AdventOfKotlin2017"
