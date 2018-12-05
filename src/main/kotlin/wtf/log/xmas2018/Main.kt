@@ -10,6 +10,7 @@ import wtf.log.xmas2018.days.day1.Day1
 import wtf.log.xmas2018.days.day2.Day2
 import wtf.log.xmas2018.days.day3.Day3
 import wtf.log.xmas2018.days.day4.Day4
+import wtf.log.xmas2018.days.day5.Day5
 import wtf.log.xmas2018.util.toPrettyFormat
 import java.time.Duration
 import java.util.concurrent.TimeUnit
@@ -21,7 +22,8 @@ private val SOLVERS = listOf<Solver<*, *>?>(
         Day1,
         Day2,
         Day3,
-        Day4
+        Day4,
+        Day5
 )
 
 @ExperimentalUnsignedTypes
